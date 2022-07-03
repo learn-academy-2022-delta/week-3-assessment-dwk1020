@@ -63,13 +63,15 @@
           // No need to change anything ABOVE this line ^
 
           return(
+            <div>
             <h1>Draw a Card</h1>
-            <button onClick={}>
+            <button onClick={this.draw}>
               Click to Draw a Card
             </button>
-            <button onClick={shuffle}>
+            <button onClick={this.shuffle}>
               Return Cards and Shuffle Deck
             </button>
+            
             <div style={handStyles}>
               {this.state.hand.map((card, index) => {
                 return (
@@ -79,6 +81,7 @@
                 )
               })}
             </div>
+          </div>
           )
         }
       }
